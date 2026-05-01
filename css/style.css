@@ -1,22 +1,44 @@
-/* ===== Google Font Import ===== */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap');
-
-/* ===== CSS Variables ===== */
 :root {
-  --green-dark:   #c65d3a;
-  --green-mid:    #e8956d;
-  --green-light:  #fde8dc;
-  --green-pale:   #fff5f0;
-  --white:        #ffffff;
-  --text-dark:    #5c2a1a;
-  --text-mid:     #a0522d;
-  --accent:       #f4b49e;
-  --border:       #f9d0be;
+  --green-dark: #c65d3a;
+  --green-mid: #e8956d;
+  --green-light: #fde8dc;
+  --green-pale: #fff5f0;
+  --white: #ffffff;
+  --text-dark: #5c2a1a;
+  --text-mid: #a0522d;
+  --accent: #f4b49e;
+  --border: #f9d0be;
 }
-
-/* ===== Reset & Base ===== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background-color: var(--green-pale); font-family: 'Oswald', sans-serif; color: var(--text-dark); font-size: 1em; line-height: 1.7; }
+[class*="col"] { float: left; }
+.row::after { content: ""; clear: both; display: block; }
+.col { padding: 15px; }
+#main img { max-width: 100%; height: auto; }
+#links { padding: 20px; }
+#links ul { list-style: none; padding-left: 0; }
+#links a { color: var(--green-dark); text-decoration: none; font-weight: bold; }
+#links a:hover { color: var(--green-mid); }
+header { background-color: var(--green-dark); color: var(--white); text-align: center; padding: 30px 20px; }
+header h1 { font-family: 'Bebas Neue', cursive; font-size: 3em; color: var(--white); letter-spacing: 4px; }
+header p { font-family: 'Oswald', sans-serif; font-size: 1em; color: var(--accent); margin-top: 6px; letter-spacing: 2px; }
+footer { background-color: var(--green-dark); color: var(--accent); text-align: center; padding: 18px; font-size: 0.9em; font-family: 'Oswald', sans-serif; letter-spacing: 1px; }
+h1 { font-family: 'Bebas Neue', cursive; color: var(--white); letter-spacing: 3px; }
+h2 { font-family: 'Bebas Neue', cursive; color: var(--green-dark); font-size: 2em; margin-bottom: 8px; border-bottom: 2px solid var(--green-mid); padding-bottom: 6px; letter-spacing: 3px; }
+h3 { font-family: 'Bebas Neue', cursive; color: var(--green-dark); font-size: 1.4em; margin-top: 18px; margin-bottom: 8px; letter-spacing: 2px; }
+h3.rate { color: var(--green-mid); }
+p { font-size: 1em; font-family: 'Oswald', sans-serif; color: var(--text-mid); margin-bottom: 10px; }
+ul { list-style: disc; padding-left: 22px; color: var(--text-dark); font-family: 'Oswald', sans-serif; }
+ol { padding-left: 22px; color: var(--text-dark); font-family: 'Oswald', sans-serif; }
+li { font-size: 1em; line-height: 1.8; margin-bottom: 4px; }
+figure { margin: 16px 0; text-align: center; }
+img { border-radius: 8px; border: 3px solid var(--green-mid); max-width: 100%; height: auto; }
+figcaption { font-size: 0.85em; font-family: 'Oswald', sans-serif; color: var(--text-mid); margin-top: 6px; font-style: italic; }
+fieldset { border: 2px solid var(--green-mid); border-radius: 8px; padding: 12px 16px; width: 100%; background-color: var(--green-light); }
+legend { font-family: 'Bebas Neue', cursive; color: var(--green-dark); font-weight: bold; padding: 0 6px; font-size: 1.1em; letter-spacing: 2px; }
+input[type="text"] { border: 2px solid var(--green-mid); border-radius: 6px; padding: 6px 10px; font-size: 1em; width: 45%; background-color: var(--green-light); color: var(--text-dark); font-family: 'Oswald', sans-serif; }
+input[type="text"]:focus { outline: none; border-color: var(--green-dark); }
+input[type="radio"] { accent-color: var(--green-dark); margin-right: 4px; }
+hr { border: none; border-top: 2px solid var(--border); margin: 20px 0; }
+.right-text { text-align: right; font-style: italic; font-family: 'Oswald', sans-serif; color: var(--text-mid); font-size: 0.9em; }
