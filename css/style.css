@@ -3,15 +3,16 @@
 
 /* ===== CSS Variables ===== */
 :root {
-  --green-dark:   #2d6a4f;
-  --green-mid:    #52b788;
-  --green-light:  #d8f3dc;
-  --green-pale:   #f0faf2;
+:root {
+  --green-dark:   #c65d3a;
+  --green-mid:    #e8956d;
+  --green-light:  #fde8dc;
+  --green-pale:   #fff5f0;
   --white:        #ffffff;
-  --text-dark:    #1b3a2d;
-  --text-mid:     #3d6b55;
-  --accent:       #95d5b2;
-  --border:       #b7e4c7;
+  --text-dark:    #5c2a1a;
+  --text-mid:     #a0522d;
+  --accent:       #f4b49e;
+  --border:       #f9d0be;
 }
 
 /* ===== Reset & Base ===== */
