@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: var(--green-pale);
+  background-color: var(--yellow-pale);
   font-family: 'Lato', sans-serif;
   color: var(--text-dark);
   font-size: 1em;
@@ -47,7 +47,7 @@ body {
 
 /* ===== Image Fix ===== */
 #main img {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
 }
 
