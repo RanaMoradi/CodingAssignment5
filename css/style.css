@@ -1,0 +1,208 @@
+/* ===== Google Font Import ===== */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Lato');
+
+/* ===== CSS Variables ===== */
+:root {
+  --green-dark:   #2d6a4f;
+  --green-mid:    #52b788;
+  --green-light:  #d8f3dc;
+  --green-pale:   #f0faf2;
+  --white:        #ffffff;
+  --text-dark:    #1b3a2d;
+  --text-mid:     #3d6b55;
+  --accent:       #95d5b2;
+  --border:       #b7e4c7;
+}
+
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--green-pale);
+  font-family: 'Lato', sans-serif;
+  color: var(--text-dark);
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--green-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 0.95em;
+  color: var(--accent);
+  margin-top: 6px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--green-dark);
+  color: var(--accent);
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* ===== Flexbox Wrapper ===== */
+.wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper div {
+  flex: 1;
+}
+
+/* ===== Box Styles ===== */
+.box1, .box2, .box3, .box4 {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green-dark);
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--green-mid);
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green-dark);
+  font-size: 1.15em;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+h3.rate {
+  color: var(--green-mid);
+}
+
+/* ===== Paragraphs ===== */
+p {
+  font-size: 1em;
+  color: var(--text-mid);
+  margin-bottom: 10px;
+}
+
+/* ===== Lists ===== */
+ul {
+  list-style: disc;
+  padding-left: 22px;
+  color: var(--text-dark);
+}
+
+ol {
+  padding-left: 22px;
+  color: var(--text-dark);
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+/* ===== Figure & Image ===== */
+figure {
+  margin: 16px 0;
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+  border: 3px solid var(--green-mid);
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.85em;
+  color: var(--text-mid);
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* ===== Fieldset & Legend ===== */
+fieldset {
+  border: 2px solid var(--green-mid);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 280px;
+  background-color: var(--green-light);
+}
+
+legend {
+  font-family: 'Playfair Display', serif;
+  color: var(--green-dark);
+  font-weight: bold;
+  padding: 0 6px;
+  font-size: 0.95em;
+}
+
+/* ===== Form Inputs ===== */
+input[type="text"] {
+  border: 2px solid var(--green-mid);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 1em;
+  width: 130px;
+  background-color: var(--green-light);
+  color: var(--text-dark);
+  font-family: 'Lato', sans-serif;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--green-dark);
+}
+
+input[type="radio"] {
+  accent-color: var(--green-dark);
+  margin-right: 4px;
+}
+
+/* ===== HR ===== */
+hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 20px 0;
+}
+
+/* ===== Right-aligned text ===== */
+.right-text {
+  text-align: right;
+  font-style: italic;
+  color: var(--text-mid);
+  font-size: 0.9em;
+}
