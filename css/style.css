@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #FFE8BE;
+  background-color: var(--green-pale);
   font-family: 'Lato', sans-serif;
   color: var(--text-dark);
   font-size: 1em;
@@ -71,8 +71,9 @@ body {
   color: var(--green-mid);
 }
 
+/* ===== Header ===== */
 header {
-  background-color: #FF9A86;
+  background-color: var(--green-dark);
   color: var(--white);
   text-align: center;
   padding: 30px 20px;
@@ -93,8 +94,8 @@ header p {
 
 /* ===== Footer ===== */
 footer {
-  background-color: #FF9A86;
-  color: #ffffff;
+  background-color: var(--green-dark);
+  color: var(--accent);
   text-align: center;
   padding: 18px;
   font-size: 0.9em;
