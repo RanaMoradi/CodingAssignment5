@@ -200,7 +200,7 @@ input[type="text"] {
   width: 45%;
   background-color: var(--green-light);
   color: var(--text-dark);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif
 }
 
 input[type="text"]:focus {
