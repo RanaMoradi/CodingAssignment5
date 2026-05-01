@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+[class*="col"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 /* ===== Google Font Import ===== */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Lato');
 
